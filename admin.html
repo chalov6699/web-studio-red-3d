@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0305" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Web Studio — Админ-панель</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-bg" aria-hidden="true"></div>
+
+  <header class="admin-topbar">
+    <a class="admin-brand" href="index.html" aria-label="Вернуться на сайт">
+      <span class="admin-brand-orb"></span>
+      <span>
+        <strong>Web Studio</strong>
+        <small>Content Control</small>
+      </span>
+    </a>
+
+    <div class="topbar-actions">
+      <span class="save-state" id="saveState">Все изменения сохранены</span>
+      <a class="admin-button admin-button-ghost" href="index.html" target="_blank" rel="noopener">Открыть сайт ↗</a>
+      <button class="admin-button admin-button-primary" id="saveButton" type="button">Сохранить</button>
+    </div>
+  </header>
+
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <div class="sidebar-head">
+        <span class="sidebar-kicker">Редактор сайта</span>
+        <h1>Управление контентом</h1>
+        <p>Меняйте блоки, цены, портфолио и рекламный баннер без правки HTML.</p>
+      </div>
+
+      <nav class="admin-nav" id="adminNav" aria-label="Разделы редактора">
+        <button class="is-active" data-section-target="hero" type="button"><span>01</span>Главная</button>
+        <button data-section-target="about" type="button"><span>02</span>О нас</button>
+        <button data-section-target="audience" type="button"><span>03</span>Аудитория</button>
+        <button data-section-target="portfolio" type="button"><span>04</span>Портфолио</button>
+        <button data-section-target="pricing" type="button"><span>05</span>Цены</button>
+        <button data-section-target="ad" type="button"><span>06</span>Реклама</button>
+        <button data-section-target="calculation" type="button"><span>07</span>Расчёт цены</button>
+        <button data-section-target="why" type="button"><span>08</span>Почему мы</button>
+        <button data-section-target="contacts" type="button"><span>09</span>Контакты</button>
+        <button data-section-target="system" type="button"><span>10</span>Данные</button>
+      </nav>
+
+      <div class="sidebar-note">
+        <span class="status-dot"></span>
+        <div><strong>Локальный режим</strong><small>Контент хранится в localStorage этого браузера.</small></div>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <section class="admin-section is-active" data-section="hero"></section>
+      <section class="admin-section" data-section="about"></section>
+      <section class="admin-section" data-section="audience"></section>
+      <section class="admin-section" data-section="portfolio"></section>
+      <section class="admin-section" data-section="pricing"></section>
+      <section class="admin-section" data-section="ad"></section>
+      <section class="admin-section" data-section="calculation"></section>
+      <section class="admin-section" data-section="why"></section>
+      <section class="admin-section" data-section="contacts"></section>
+      <section class="admin-section" data-section="system"></section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <input id="importInput" type="file" accept="application/json,.json" hidden />
+
+  <script src="content.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Сайты и Telegram-боты в связке, под ключ. Премиальная разработка, интеграции, автоматизация и поддержка." />
+  <meta name="theme-color" content="#0a0305" />
+  <title>Web Studio — сайты + Telegram-боты под ключ</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- Декоративный фон: сетка, частицы, scanlines -->
+  <div class="scene-bg" aria-hidden="true">
+    <div class="bg-glow bg-glow-a"></div>
+    <div class="bg-glow bg-glow-b"></div>
+    <div class="perspective-grid"></div>
+    <div class="particles" id="particles"></div>
+    <div class="scanlines"></div>
+  </div>
+
+  <!-- Кастомный светящийся курсор для desktop -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="На главную">
+        <span class="brand-orb" aria-hidden="true"></span>
+        <span class="brand-text">Web Studio</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-controls="siteNav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Основная навигация">
+        <a href="#about">О нас</a>
+        <a href="#audience">Кому подходит</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#pricing">Цены</a>
+        <a href="#calculation">Как считаем</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="button button-small button-outline header-cta" href="#contacts">Обсудить проект</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Сайт + Telegram-бот = единая система</p>
+          <h1 class="glitch-title" data-text="Сайты и Telegram-боты в связке, под ключ">
+            Сайты и Telegram-боты в связке, под ключ
+          </h1>
+          <p class="hero-text">
+            Создаём цельную цифровую систему: сайт принимает заявки, бот отвечает и уведомляет,
+            данные синхронизируются, а управление остаётся в одном месте.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary pulse-button" id="heroPrimary" href="#contacts">Обсудить проект</a>
+            <a class="button button-ghost" id="heroSecondary" href="https://t.me/username" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+          </div>
+
+          <div class="hero-meta" id="heroMeta" aria-label="Ключевые преимущества">
+            <span>Mobile-first</span>
+            <span>30 дней гарантии</span>
+            <span>Единая логика</span>
+          </div>
+        </div>
+
+        <!-- CSS 3D hologram -->
+        <div class="hero-visual reveal" data-parallax="0.18" aria-hidden="true">
+          <div class="holo-stage" id="holoStage">
+            <div class="holo-rings">
+              <span class="ring ring-1"></span>
+              <span class="ring ring-2"></span>
+              <span class="ring ring-3"></span>
+            </div>
+
+            <div class="holo-cube" id="holoCube">
+              <div class="cube-face front"><span>WEB</span></div>
+              <div class="cube-face back"><span>BOT</span></div>
+              <div class="cube-face right"><span>API</span></div>
+              <div class="cube-face left"><span>CRM</span></div>
+              <div class="cube-face top"><span>SEO</span></div>
+              <div class="cube-face bottom"><span>DATA</span></div>
+            </div>
+
+            <div class="holo-core"></div>
+            <div class="holo-beam"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-floor" aria-hidden="true"></div>
+    </section>
+
+    <!-- О НАС -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">О нас</p>
+          <h2>Сайт и бот — не два продукта, а одна рабочая система</h2>
+          <p>
+            Мы делаем сайты и Telegram-ботов в связке. Не по отдельности, а как единую систему:
+            клиент заходит на сайт, оставляет заявку — бот сразу получает уведомление и отвечает.
+            Или наоборот: человек пишет боту, а данные падают в админку сайта.
+          </p>
+        </div>
+
+        <div class="feature-grid" id="aboutCards">
+          <article class="holo-card reveal">
+            <div class="holo-icon">01</div>
+            <h3>Адаптивный сайт</h3>
+            <p>Телефон, планшет, ПК.</p>
+          </article>
+          <article class="holo-card reveal">
+            <div class="holo-icon">02</div>
+            <h3>Telegram-бот</h3>
+            <p>Связанный с сайтом.</p>
+          </article>
+          <article class="holo-card reveal">
+            <div class="holo-icon">03</div>
+            <h3>Единая админка</h3>
+            <p>Контент и логика в одном месте.</p>
+          </article>
+          <article class="holo-card reveal">
+            <div class="holo-icon">04</div>
+            <h3>Деплой</h3>
+            <p>Домен, SSL, сервер.</p>
+          </article>
+          <article class="holo-card reveal">
+            <div class="holo-icon">05</div>
+            <h3>Базовая SEO-оптимизация</h3>
+            <p>Технический фундамент для индексации.</p>
+          </article>
+          <article class="holo-card reveal">
+            <div class="holo-icon">06</div>
+            <h3>30 дней гарантии</h3>
+            <p>После запуска проекта.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОМУ ПОДХОДИТ -->
+    <section class="section section-deep" id="audience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Кому подходит</p>
+          <h2>Тем, кому важен единый поток заявок и меньше ручной рутины</h2>
+        </div>
+
+        <div class="audience-grid" id="audienceCards">
+          <article class="holo-card audience-card reveal">
+            <span class="card-kicker">01</span>
+            <h3>Малому и среднему бизнесу</h3>
+          </article>
+          <article class="holo-card audience-card reveal">
+            <span class="card-kicker">02</span>
+            <h3>Начинающим самозанятым</h3>
+          </article>
+          <article class="holo-card audience-card reveal">
+            <span class="card-kicker">03</span>
+            <h3>ИП</h3>
+          </article>
+          <article class="holo-card audience-card reveal">
+            <span class="card-kicker">04</span>
+            <h3>Тем, у кого сайт и Telegram работают отдельно</h3>
+          </article>
+          <article class="holo-card audience-card reveal">
+            <span class="card-kicker">05</span>
+            <h3>Тем, кто хочет автоматизировать повторяющиеся вопросы</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ПОРТФОЛИО -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Наше портфолио</p>
+          <h2>Проекты, где дизайн работает вместе с автоматизацией</h2>
+          <p>Несколько примеров формата работ. Карточки, ссылки и изображения полностью редактируются через админ-панель.</p>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <article class="portfolio-card reveal">
+            <a class="portfolio-visual" href="#contacts" aria-label="Открыть проект NOVA / Digital">
+              <span class="portfolio-index">01</span>
+              <span class="portfolio-result">+42% заявок</span>
+            </a>
+            <div class="portfolio-body">
+              <span class="panel-label">Корпоративный сайт + бот</span>
+              <h3>NOVA / Digital</h3>
+              <p>Премиальный лендинг, сбор заявок и Telegram-уведомления для отдела продаж.</p>
+              <a class="portfolio-link" href="#contacts">Смотреть проект <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЦЕНЫ -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Цены</p>
+          <h2>Понятные ориентиры по бюджету</h2>
+        </div>
+
+        <div class="floating-panel reveal" id="bundlePanel">
+          <div class="panel-heading">
+            <div>
+              <span class="panel-label">Пакет 1</span>
+              <h3>Сайт + Telegram-бот в связке</h3>
+            </div>
+          </div>
+
+          <div class="table-wrap" tabindex="0" role="region" aria-label="Пакеты сайт плюс Telegram-бот">
+            <table>
+              <thead>
+                <tr>
+                  <th>Пакет</th>
+                  <th>Что входит</th>
+                  <th>Цена</th>
+                  <th>Срок</th>
+                </tr>
+              </thead>
+              <tbody id="bundleRows">
+                <tr>
+                  <td><strong>Базовый</strong></td>
+                  <td>Лендинг / до 5 страниц + простой бот</td>
+                  <td>180 000 ₽ / 90 000 ₴ / 450 000 ₸</td>
+                  <td>2–3 недели</td>
+                </tr>
+                <tr>
+                  <td><strong>Стандарт</strong></td>
+                  <td>5–10 страниц + бот с формами + CRM</td>
+                  <td>320 000 ₽ / 160 000 ₴ / 800 000 ₸</td>
+                  <td>3–5 недель</td>
+                </tr>
+                <tr>
+                  <td><strong>Продвинутый</strong></td>
+                  <td>10+ страниц + бот с оплатой и БД</td>
+                  <td>от 550 000 ₽ / от 275 000 ₴ / от 1 400 000 ₸</td>
+                  <td>5–8 недель</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="floating-panel reveal" id="servicesPanel">
+          <div class="panel-heading">
+            <div>
+              <span class="panel-label">Пакет 2</span>
+              <h3>Отдельные услуги</h3>
+            </div>
+          </div>
+
+          <div class="table-wrap" tabindex="0" role="region" aria-label="Отдельные услуги">
+            <table>
+              <thead>
+                <tr>
+                  <th>Услуга</th>
+                  <th>Цена</th>
+                </tr>
+              </thead>
+              <tbody id="serviceRows">
+                <tr>
+                  <td><strong>Сайт отдельно</strong></td>
+                  <td>90 000 – 200 000 ₽</td>
+                </tr>
+                <tr>
+                  <td><strong>Telegram-бот отдельно</strong></td>
+                  <td>40 000 – 120 000 ₽</td>
+                </tr>
+                <tr>
+                  <td><strong>Доработка / правки сайта</strong></td>
+                  <td>3 000 – 5 000 ₽/час</td>
+                </tr>
+                <tr>
+                  <td><strong>Доп. функции для бота</strong></td>
+                  <td>Зависит от задачи</td>
+                </tr>
+                <tr>
+                  <td><strong>Ежемесячная поддержка</strong></td>
+                  <td>15 000 – 30 000 ₽/мес</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside class="support-panel reveal" id="supportPanel">
+          <span class="panel-label">Поддержка</span>
+          <h3>После запуска</h3>
+          <p>
+            Если проект нужно регулярно обновлять, менять логику бота, чинить мелкие баги и дорабатывать сценарии —
+            поддержку можно вести ежемесячно и считать по фактическим задачам.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+
+    <!-- РЕКЛАМНЫЙ БАННЕР -->
+    <section class="section promo-section" id="promo">
+      <div class="container">
+        <div class="promo-banner reveal">
+          <div class="promo-orb" aria-hidden="true"></div>
+          <div class="promo-copy">
+            <span class="promo-badge" id="promoBadge">Спецпредложение</span>
+            <h2 id="promoTitle">Бесплатный мини-аудит сайта или идеи перед стартом проекта</h2>
+            <p id="promoText">Покажем, где теряются заявки и какие связки с Telegram можно автоматизировать в первую очередь.</p>
+          </div>
+          <div class="promo-action">
+            <a class="button button-primary promo-inline-button" id="promoButton" href="#contacts">Получить аудит <span aria-hidden="true">→</span></a>
+            <span class="promo-note" id="promoNote">Без обязательств · ответим в Telegram</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАК СЧИТАЕМ -->
+    <section class="section section-deep" id="calculation">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Как мы считаем цену</p>
+          <h2>Прозрачное ценообразование</h2>
+        </div>
+
+        <div class="calc-grid" id="calcGrid">
+          <article class="calc-panel reveal">
+            <span class="panel-label">По сайту</span>
+            <h3>Стоимость зависит от объёма и сложности</h3>
+            <ul>
+              <li>Количество страниц</li>
+              <li>Кастомный дизайн vs шаблон — разница 30–50%</li>
+              <li>Интеграции</li>
+              <li>Контент</li>
+            </ul>
+          </article>
+
+          <article class="calc-panel reveal">
+            <span class="panel-label">По боту</span>
+            <h3>Цена зависит от сценариев и интеграций</h3>
+            <ul>
+              <li>Сложность сценария</li>
+              <li>Количество интеграций</li>
+              <li>Наличие админки</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПОЧЕМУ МЫ -->
+    <section class="section" id="why-us">
+      <div class="container narrow">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Почему мы</p>
+          <h2>Один человек отвечает за весь поток</h2>
+        </div>
+
+        <blockquote class="neon-quote reveal" id="whyQuote">
+          «Когда сайт и бот делают разные люди, обычно выясняется, что данные не передаются и никто не виноват.
+          Мы делаем в связке — один человек отвечает за весь поток. Цена не самая низкая, но после запуска вы знаете,
+          к кому идти с проблемой.»
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="section section-deep" id="contacts">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2>Опишите задачу — соберём систему под ваш процесс</h2>
+          <p>
+            Расскажите, что должен делать сайт, что должен делать бот и куда должны попадать данные.
+            Мы разложим проект на понятные этапы.
+          </p>
+
+          <a class="button button-primary" id="contactTelegramButton" href="https://t.me/username" target="_blank" rel="noopener noreferrer">
+            Написать в Telegram
+          </a>
+
+          <div class="contact-data">
+            <span>Telegram: <strong id="contactTelegram">@username</strong></span>
+            <span>Телефон: <strong id="contactPhone">+7 (000) 000-00-00</strong></span>
+            <span>Домен: <strong id="contactDomain">example.com</strong></span>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required minlength="2" />
+            <p class="field-error" id="nameError" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="contact">Телефон / Telegram</label>
+            <input id="contact" name="contact" type="text" placeholder="+7 999 123-45-67 или @username" required />
+            <p class="field-error" id="contactError" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="task">Описание задачи</label>
+            <textarea id="task" name="task" rows="6" placeholder="Что должен делать сайт и бот?" required minlength="20"></textarea>
+            <p class="field-error" id="taskError" aria-live="polite"></p>
+          </div>
+
+          <button class="button button-primary button-full" type="submit">Отправить заявку</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top">
+        <span class="brand-orb" aria-hidden="true"></span>
+        <span class="brand-text">Web Studio</span>
+      </a>
+      <p>Сайты и Telegram-боты в связке, под ключ.</p>
+      <a id="footerTelegram" href="https://t.me/username" target="_blank" rel="noopener noreferrer">@username</a>
+    </div>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
